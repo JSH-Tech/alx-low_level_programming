@@ -14,7 +14,7 @@ for (low = 'a'; low <= 'z'; low++)
 putchar(low);
 for (low = 'A'; low <= 'Z'; low++)
 putchar(low);
-putchar('\n');
+write('\n');
 
 return (0);
 }
