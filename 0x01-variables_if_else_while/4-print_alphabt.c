@@ -11,7 +11,7 @@ int main(void)
 char low;
 
 for (low = 'a'; low <= 'z'; low++)
-putchar(low);
+printf("%c", low);
 for (low = 'A'; low <= 'Z'; low++)
 printf("%c", low);
 putchar('\n');
