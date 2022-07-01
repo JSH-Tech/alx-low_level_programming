@@ -11,10 +11,10 @@ int main(void)
 char low;
 
 for (low = 'a'; low <= 'z'; low++)
-printf("%c", low);
+putchar(low);
 for (low = 'A'; low <= 'Z'; low++)
-printf("%c", low);
-putchar('\n');
+putchar(low);
+ printf("%c",'\n');
 
 return (0);
 }
