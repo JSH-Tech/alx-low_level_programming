@@ -13,8 +13,8 @@ char low;
 for (low = 'a'; low <= 'z'; low++)
 putchar(low);
 for (low = 'A'; low <= 'Z'; low++)
-putchar(low);
-write('\n');
+printf(low);
+putchar('\n');
 
 return (0);
 }
