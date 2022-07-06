@@ -12,4 +12,5 @@ for (low = 'a'; low <= 'z'; low++)
 {
 putchar(low);
 }
+putchar('\n');
 }
