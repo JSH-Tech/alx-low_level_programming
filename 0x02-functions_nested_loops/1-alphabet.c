@@ -7,7 +7,6 @@
 void print_alphabet(void);
 int main(void)
 {
-char car;
 print_alphabet();
 return (0);
 }
