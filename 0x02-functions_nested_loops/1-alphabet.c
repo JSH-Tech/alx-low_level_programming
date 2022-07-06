@@ -1,21 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *main - Entry point
+ *print_alphabet - Entry point
  *
  *Return: Always 0 (Success)
  */
-void print_alphabet(void);
-int main(void)
-{
-print_alphabet();
-return (0);
-}
 void print_alphabet(void)
 {
 char low;
 for (low = 'a'; low <= 'z'; low++)
 {
-putchar(low);
+putchar(low'\n');
 }
 }
