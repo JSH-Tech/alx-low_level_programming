@@ -13,7 +13,7 @@ return (0);
 void print_alphabet(void)
 {
 char low;
-for (low = a; low <= z; low++)
+for (low = 'a'; low <= 'z'; low++)
 {
 putchar(low);
 }
