@@ -14,10 +14,7 @@ for (i = n; i <= 98; i++)
 {
 _putchar(i);
 }
-}
-else
-{
-_putchar("error")
+_putchar('\n')
 }
 return(0)
 }
