@@ -7,30 +7,22 @@
  * @c: third integer
  * Return: largest number
  */
-int largest_number(int a, int b, int c);
+
 int largest_number(int a, int b, int c)
 {
 int largest;
-int permut;
-if (a > b)
-{ if (b > c)
+
+if (a > b && a > c)
 {
 largest = a;
 }
-}else if (b>c){
-permut = a;
-a = b;
-b = permut;
-largest = a;
+else if (b > a && b > c)
+{
+largest = b;
 }
 else
 {
-permut = b;
-b = c;
-c = permut;
-if(b>c)
-{
-largest = a;
+largest = c;
 }
-}
+return (largest);
 }
