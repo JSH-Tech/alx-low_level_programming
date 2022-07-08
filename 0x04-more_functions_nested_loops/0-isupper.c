@@ -2,20 +2,17 @@
 #include <stdio.h>
 
 /**
- *int_isupper - a function that checks for uppercase character
- *user input's number to check if it is uppercase
- *@c: number input
- *Return (1) Always c isupper
+ * _isupper - uppercase letters
+ * @c: character to check
+ *
+ * Return: 0 or 1
  */
+
 
 int _isupper(int c)
 {
-if (c.isupper() == True)
-{
+if (c >= 'A' && c <= 'Z')
 return (1);
-}
 else
-{
 return (0);
-}
 }
