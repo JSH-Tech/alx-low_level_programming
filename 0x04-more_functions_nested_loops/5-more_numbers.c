@@ -13,7 +13,7 @@ int i;
 int j;
 for (j = 1; j <= 10; j++)
 {
-for (i = '0'; i <= "14"; i++)
+for (i = "0"; i <= "14"; i++)
 {
 _putchar(i);
 }
