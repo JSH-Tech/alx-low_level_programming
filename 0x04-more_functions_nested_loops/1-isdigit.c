@@ -1,14 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 
-int _isdigit(int c)
-{
 /**
- * isdigit - function that checks for digit
- *@c is number to enter
- * Return: 1 or 0.
+ * _isdigit - function that checks for digit
+ *@c: number to enter
+ *
+ * Return: 1 or 0
  */
-}
 
 int _isdigit(int c)
 {
