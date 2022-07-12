@@ -10,7 +10,7 @@
  *Return: Always length (Success)
  */
 
-int _strlen(char *s)
+int _strlen(char s)
 {
 int length;
 length = strlen(*s);
