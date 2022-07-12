@@ -10,8 +10,10 @@
  *Return: Always length (Success)
  */
 
-int _strlen(char s)
+int _strlen(char *s)
 {
-char length;
-length = strlen(s);
+int length;
+while (*s++)
+length++;
+return (length);
 }
