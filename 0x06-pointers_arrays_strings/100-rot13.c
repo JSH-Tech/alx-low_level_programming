@@ -1,4 +1,4 @@
-#include "holbertonmain.h"
+#include "main.h"
 
 /**
  * rot13 - Entry point
