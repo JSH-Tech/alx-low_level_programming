@@ -6,13 +6,16 @@
  *
  *@argc : a parameter
  *@argv : a parameter type char
- *return (0) : always success
+ *Return: 0
  */
 
 int main(int argc, char *argv[])
 {
 (void)argc;
- printf("%s\n", (argc - 1)+'0');
-
+int i;
+for (i = 0; i < argc; i++)
+{
+printf("%s\n", argv[i]);
+}
 return (0);
 }

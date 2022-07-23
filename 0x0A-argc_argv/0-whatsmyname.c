@@ -6,7 +6,7 @@
  *
  *@argc : a parameter
  *@argv : a parameter type char
- *return (0) : always success
+ *Return: 0
  */
 
 int main(int argc, char *argv[])
