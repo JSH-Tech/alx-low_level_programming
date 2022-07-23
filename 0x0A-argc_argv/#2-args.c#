@@ -1,0 +1,191 @@
+root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# gcc 2-args.c
+root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# ls
+0-whatsmyname.c  1-args.c  1-args.c~  2-args.c  2-args.c~  a.out  main.h  README.md
+root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# ./a.out papa, maman, tonton, tata
+./a.out
+  papa,
+  maman,
+  tonton,
+tata
+  root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# betty 2-args.c
+
+========== 2-args.c ==========
+  2-args.c:15: WARNING: please, no spaces at the start of a line
+  2-args.c:16: WARNING: Missing a blank line after declarations
+  2-args.c:16: WARNING: please, no spaces at the start of a line
+  2-args.c:16: WARNING: suspect code indent for conditional statements (1, 5)
+  2-args.c:16: ERROR: spaces required around that '=' (ctx:VxV)
+    2-args.c:16: ERROR: spaces required around that '<' (ctx:VxV)
+      2-args.c:17: WARNING: please, no spaces at the start of a line
+							      2-args.c:18: WARNING: please, no spaces at the start of a line
+							      2-args.c:18: ERROR: space required after that ',' (ctx:VxV)
+								2-args.c:19: WARNING: please, no spaces at the start of a line
+							      total: 3 errors, 7 warnings, 22 lines checked
+    2-args.c:12: warning: No description found for return value of 'main'
+main
+  root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# emacs 2-args.c
+  root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# betty 2-args.c
+
+========== 2-args.c ==========
+  2-args.c:12: warning: No description found for return value of 'main'
+main
+							    root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# emacs 2-args.c
+							    root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# betty 1-args.c
+
+========== 1-args.c ==========
+							    1-args.c:11: warning: No description found for return value of 'main'
+main
+							  root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# emacs 2-args.c
+							  root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# emacs 1-args.c
+							  root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# emacs 0-whatsmyname.c
+							  root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# betty *
+
+========== 0-whatsmyname.c ==========
+							  0-whatsmyname.c:12: warning: No description found for return value of 'main'
+main
+
+========== 1-args.c ==========
+														    1-args.c:11: warning: No description found for return value of 'main'
+main
+
+========== 1-args.c~ ==========
+															 1-args.c~:12: warning: No description found for return value of 'main'
+main
+
+========== 2-args.c ==========
+main
+
+========== 2-args.c~ ==========
+																					    2-args.c~:12: warning: No description found for return value of 'main'
+main
+
+========== a.out ==========
+																						  a.out:0: ERROR: Does not appear to be a unified-diff format patch
+																												     total: 1 errors, 0 warnings, 0 lines checked
+
+========== main.h ==========
+																						  main.h:3: WARNING: This line is not protected from double inclusion
+																						  total: 0 errors, 1 warnings, 4 lines checked
+
+========== README.md ==========
+																						  root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# emacs 0-whatsmyname.c
+																						  root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# betty *
+
+========== 0-whatsmyname.c ==========
+main
+
+========== 1-args.c ==========
+																						  1-args.c:11: warning: No description found for return value of 'main'
+main
+
+========== 1-args.c~ ==========
+																						  1-args.c~:12: warning: No description found for return value of 'main'
+main
+
+========== 2-args.c ==========
+main
+
+========== 2-args.c~ ==========
+																													  2-args.c~:12: warning: No description found for return value of 'main'
+main
+
+========== a.out ==========
+																													   a.out:0: ERROR: Does not appear to be a unified-diff format patch
+																																				   total: 1 errors, 0 warnings, 0 lines checked
+
+========== main.h ==========
+																													   main.h:3: WARNING: This line is not protected from double inclusion
+																													   total: 0 errors, 1 warnings, 4 lines checked
+
+========== README.md ==========
+																													   root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# emacs 1-args.c
+																													   root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# betty *
+
+========== 0-whatsmyname.c ==========
+main
+
+========== 1-args.c ==========
+main
+
+========== 1-args.c~ ==========
+																													   1-args.c~:12: warning: No description found for return value of 'main'
+main
+
+========== 2-args.c ==========
+main
+
+========== 2-args.c~ ==========
+																													   2-args.c~:12: warning: No description found for return value of 'main'
+main
+
+========== a.out ==========
+																																				    a.out:0: ERROR: Does not appear to be a unified-diff format patch
+																																				    total: 1 errors, 0 warnings, 0 lines checked
+
+========== main.h ==========
+																																				    main.h:3: WARNING: This line is not protected from double inclusion
+																																				    total: 0 errors, 1 warnings, 4 lines checked
+
+========== README.md ==========
+																																				    ^[[A^[[Aroot@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# emacs 1-args.c
+																																					   root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# emacs 2-args.c
+																																					   root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# betty *
+
+========== 0-whatsmyname.c ==========
+main
+
+========== 1-args.c ==========
+																																					   1-args.c:8: ERROR: trailing whitespace
+																																					   total: 1 errors, 0 warnings, 17 lines checked
+main
+
+========== 1-args.c~ ==========
+																																					   1-args.c~:12: warning: No description found for return value of 'main'
+main
+
+========== 2-args.c ==========
+main
+
+========== 2-args.c~ ==========
+main
+
+========== a.out ==========
+																																					   a.out:0: ERROR: Does not appear to be a unified-diff format patch
+																																					   total: 1 errors, 0 warnings, 0 lines checked
+
+========== main.h ==========
+																																					   main.h:3: WARNING: This line is not protected from double inclusion
+																																					   total: 0 errors, 1 warnings, 4 lines checked
+
+========== README.md ==========
+																																					   root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# emacs 1-args.c
+																																					   root@0208a22a2e8c:/alx-low_level_programming/0x0A-argc_argv# betty *
+
+========== 0-whatsmyname.c ==========
+main
+
+========== 1-args.c ==========
+																																					   1-args.c:8: ERROR: trailing whitespace
+																																					   total: 1 errors, 0 warnings, 16 lines checked
+main
+
+~#include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+/**
+ *main - is function entry
+ *
+ *@argc : a parameter
+ *@argv : a parameter type char
+ *Return: 0
+ */
+
+int main(int argc, char *argv[])
+{
+int i;
+for (i = 0; i < argc; i++)
+{
+printf("%s\n", argv[i]);
+}
+return (0);
+}
