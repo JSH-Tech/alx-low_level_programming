@@ -36,7 +36,7 @@ ar = malloc(sizeof(char) * (len + 1));
 if (ar == NULL)
 return (NULL);
 for (p = 0; p < i; p++)
-r[k++] = s1[p];
+ar[k++] = s1[p];
 for (m = 0; m < j; m++)
 ar[k++] = s2[m];
 ar[k] = '\0';
