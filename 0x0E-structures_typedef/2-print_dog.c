@@ -30,5 +30,6 @@ else
 printf("Owner: (nil)\n");
 }
 }
+else
 return;
 }
