@@ -1,63 +1,51 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "3-calc.h"
+#include <stdarg.h>
+#include "variadic_functions.h"
+
 /**
- * op_add - adds the ints
- * @a: first int
- * @b: second int
- * Return: sum
- */
-int op_add(int a, int b)
+* print_all - a function that prints everything
+* @format: list of types of arguments passed to the function
+*/
+
+void print_all(const char * const format, ...)
 {
-return (a + b);
+unsigned int counter = 0, j, i = 0;
+char *p;
+const char arguments[] = "cifs";
+va_list myList;
+va_start(myList, format);
+while (format && format[counter])
+{
+j = 0;
+while (arguments[j])
+{
+if (format[counter] == arguments[j] && i)
+{
+printf(", ");
+break;
+} j++;
 }
-/**
- * op_sub - subtracts the ints
- * @a: first int
- * @b: second int
- * Return: difference
- */
-int op_sub(int a, int b)
+switch (format[counter])
 {
-return (a - b);
+case 'c':
+printf("%c", va_arg(myList, int)), i = 1;
+break;
+case 'i':
+printf("%d", va_arg(myList, int)), i = 1;
+break;
+case 'f':
+printf("%f", va_arg(myList, double)), i = 1;
+break;
+case 's':
+p = va_arg(myList, char *), i = 1;
+if (!p)
+{
+printf("(nil)");
+break;
 }
-/**
- * op_mul - multiplies the ints
- * @a: first int
- * @b: second int
- * Return: product
- */
-int op_mul(int a, int b)
-{
-return (a * b);
+printf("%s", p);
+break;
+} counter++;
 }
-/**
- * op_div - divides the ints
- * @a: first int
- * @b: second int
- * Return: result
- */
-int op_div(int a, int b)
-{
-if (b == 0)
-{
-printf("Error\n");
-exit(100);
-}
-return (a / b);
-}
-/**
- * op_mod - remainder of division of ints
- * @a: first int
- * @b: second int
- * Return: remainder
- */
-int op_mod(int a, int b)
-{
-if (b == 0)
-{
-printf("Error\n");
-exit(100);
-}
-return (a % b);
+printf("\n"), va_end(myList);
 }
