@@ -1,46 +1,37 @@
 #include "lists.h"
+#include <string.h>
+#include <stdlib.h>
 
 /**
- * _strlen - Returns the lenght of a string.
- * @s: Type char pointer
- * Return: Always 0.
+ * _strlen - returns the length of a string
+ * @s: the string whose length to return
+ * Return: the length of the string
  */
 int _strlen(const char *s)
 {
-unsigned int len;
-for (len = 0; s[len] != '\0'; len++)
-{
-}
-return (len);
+int i = 0;
+while (s[i] != '\0')
+i++;
+return (i);
 }
 
 /**
- * add_node_end - Returns the lenght of a string.
- * @str: Type char pointer
- * @head: type pointer of struct
- * Return: new_node.
+ * add_node - adds a new node at the beginning of list_t list
+ * @head: address of node
+ * @str: string to add
+ * Return: address of new element, NULL if it failed
  */
-list_t *add_node_end(list_t **head, const char *str)
+
+list_t *add_node(list_t **head, const char *str)
 {
-list_t *n_node, *tmp_n_d;
-n_node = malloc(sizeof(list_t));
-if (n_node == NULL)
+list_t *new;
+int length = _strlen(str);
+new = malloc(sizeof(list_t));
+if (new == NULL)
 return (NULL);
-n_node->str = strdup(str);
-n_node->len = _strlen(str);
-n_node->next = NULL;
-if (!*head)
-{
-*head = n_node;
-}
-else
-{
-tmp_n_d = *head;
-while (tmp_n_d->next)
-tmp_n_d = tmp_n_d->next;
-{
-tmp_n_d->next = n_node;
-}
-}
-return (n_node);
+new->str = strdup(str);
+new->len = length;
+new->next = *head;
+*head = new;
+return (new);
 }
