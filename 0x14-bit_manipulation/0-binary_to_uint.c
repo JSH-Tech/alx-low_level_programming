@@ -38,7 +38,7 @@ for (i = _strlen(b) - 1; b[i]; i--, expo *= 2)
 if (b[i] != '0' && b[i] != '1')
 return (0);
 tmp = _stoi(b[i]);
-result += tmp * expo;
+result += tmp *expo;
 }
 return (result);
 }
